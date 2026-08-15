@@ -1,10 +1,86 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #17201c;
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --text: #17201c;
+  --primary: #007a46;
+  --border: #e5e9e6;
 }
 
-h1 {
-  color: #007a46;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Google Sans", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: min(1200px, calc(100% - 40px));
+  margin: auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.header-inner {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--text);
+  line-height: 1;
+}
+
+.logo-small {
+  display: block;
+  font-size: 11px;
+}
+
+.logo-main {
+  display: block;
+  margin-top: 4px;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.logo-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  opacity: .7;
+}
+
+.main-nav {
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+}
+
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.theme-toggle {
+  border: 0;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+main {
+  padding: 60px 0;
 }
