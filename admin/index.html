@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CMS Ma'arif NU</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="login" class="screen">
+  <div class="box">
+    <h1>Ma'arif NU</h1>
+    <p>CMS Kabupaten Pasuruan</p>
+    <form id="loginForm">
+      <input id="email" type="email" placeholder="Email admin" required>
+      <input id="password" type="password" placeholder="Password" required>
+      <button>Masuk</button>
+      <div id="loginMsg"></div>
+    </form>
+  </div>
+</div>
+
+<div id="app" hidden>
+  <header><b>Ma'arif NU CMS</b><button id="logout">Keluar</button></header>
+  <main>
+    <section class="toolbar">
+      <div><h1>Berita</h1><p>Kelola berita langsung dari CMS.</p></div>
+      <button id="newBtn">+ Tulis Berita</button>
+    </section>
+    <section id="list"></section>
+
+    <section id="editor" class="panel" hidden>
+      <div class="toolbar"><div><h2 id="editorTitle">Tulis Berita</h2></div><button id="closeBtn" class="secondary">Tutup</button></div>
+      <form id="postForm">
+        <input type="hidden" id="postId">
+        <label>Judul<input id="title" required></label>
+        <label>Slug<input id="slug" required></label>
+        <label>Kategori<select id="category"></select></label>
+        <label>URL gambar<input id="image" placeholder="https://..."></label>
+        <label>Ringkasan<textarea id="excerpt" rows="3"></textarea></label>
+        <label>Isi berita<textarea id="content" rows="14" required></textarea></label>
+        <div class="row">
+          <label class="check"><input id="headline" type="checkbox"> Jadikan Headline</label>
+          <label>Status<select id="status"><option value="draft">Draft</option><option value="published">Publish</option></select></label>
+        </div>
+        <button type="submit">Simpan</button><span id="saveMsg"></span>
+      </form>
+    </section>
+  </main>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
