@@ -1,1 +1,11 @@
+name = "maarif"
+main = "src/index.js"
+compatibility_date = "2026-08-15"
 
+[assets]
+directory = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "maarif-db"
+database_id = "13e803ea-a1e8-4bba-93c8-a34c3bc61e2d"
