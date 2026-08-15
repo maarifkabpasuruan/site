@@ -7,6 +7,19 @@ export default {
     if (request.method==="OPTIONS") return new Response(null,{headers:cors});
 
     try {
+      // CEK SECRET CLOUDFLARE
+    if (path === "/api/admin/check-secret" && request.method === "GET") {
+      return json({
+        emailConfigured: !!env.ADMIN_EMAIL,
+        passwordConfigured: !!env.ADMIN_PASSWORD
+      }, cors);
+    }
+
+    // LOGIN ADMIN
+    if (path === "/api/admin/login" && request.method === "POST") {
+      // kode login yang sudah ada...
+    }
+      
       if (path==="/api/categories" && request.method==="GET") {
         const {results}=await env.DB.prepare("SELECT id,name,slug,is_active,sort_order FROM categories WHERE is_active=1 ORDER BY sort_order,name").all();
         return json(results,cors);
