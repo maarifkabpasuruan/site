@@ -1,47 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Ma'arif NU Kabupaten Pasuruan</title>
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ma'arif NU Kabupaten Pasuruan</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<header class="header"><div class="container nav">
+<a class="brand" href="#"><img src="images/logo.png" alt="Ma'arif NU Kabupaten Pasuruan"></a>
+<nav><a class="active" href="#">Beranda</a><a href="#berita">Berita</a><a href="#tentang">Tentang Kami</a><a href="#harlah">Harlah Ke-97</a><a href="#kontak">Kontak</a></nav>
+<div class="actions"><button id="searchBtn">⌕</button><button id="themeToggle" class="theme">☀ <span>●</span> ☾</button><button id="menuBtn" class="menu">☰</button></div>
+</div><div id="mobileNav" class="mobile-nav"><a href="#">Beranda</a><a href="#berita">Berita</a><a href="#tentang">Tentang Kami</a><a href="#harlah">Harlah Ke-97</a><a href="#kontak">Kontak</a></div>
+<div id="searchPanel" class="search"><div class="container"><input placeholder="Cari berita..."></div></div>
+</header>
 
-  <header class="site-header">
-    <div class="container header-inner">
+<main>
+<section class="banner"><div class="container"><div class="placeholder wide">BANNER LANDSCAPE <small>Slot CMS • 960 × 150</small></div></div></section>
 
-     <a href="/" class="logo">
-  <img src="images/logo.png" alt="Ma'arif NU Kabupaten Pasuruan">
-</a>
+<section class="hero"><div class="container"><div class="label">HEADLINE</div><div class="hero-grid">
+<div class="placeholder hero-img">FEATURED IMAGE</div><article><div class="cat">Pendidikan</div><h1><a href="#">Membangun Pendidikan Ma'arif yang Unggul, Berkarakter dan Berkemajuan</a></h1><p>Ringkasan berita utama akan diambil otomatis dari CMS.</p><small>15 Agustus 2026 · Ma'arif NU Kabupaten Pasuruan</small></article>
+</div></div></section>
 
-      <nav class="main-nav">
-        <a href="/">Beranda</a>
-        <a href="#">Berita</a>
-        <a href="#">Profil</a>
-        <a href="#">Program</a>
-        <a href="#">Agenda</a>
-      </nav>
+<section id="berita" class="section muted"><div class="container grid">
+<div><div class="section-head"><div><div class="label">BERITA</div><h2>Berita Terbaru</h2></div><a href="#">Lihat semua →</a></div>
+<div class="news">
+<article><div class="placeholder news-img">IMAGE</div><div><div class="cat">Kegiatan</div><h3><a href="#">Ma'arif NU Kabupaten Pasuruan Terus Perkuat Kolaborasi Pendidikan</a></h3><p>Ringkasan singkat berita terbaru.</p><small>15 Agustus 2026</small></div></article>
+<article><div class="placeholder news-img">IMAGE</div><div><div class="cat">Ke-NU-an</div><h3><a href="#">Penguatan Aswaja Menjadi Bagian Penting Pendidikan Ma'arif</a></h3><p>Ringkasan singkat berita terbaru.</p><small>14 Agustus 2026</small></div></article>
+<article><div class="placeholder news-img">IMAGE</div><div><div class="cat">Pramuka</div><h3><a href="#">Pramuka Ma'arif Dorong Karakter dan Kemandirian Peserta Didik</a></h3><p>Ringkasan singkat berita terbaru.</p><small>13 Agustus 2026</small></div></article>
+</div></div>
+<aside><h3>Informasi</h3><div class="placeholder portrait">BANNER PORTRAIT<small>Slot CMS • 300 × 360</small></div></aside>
+</div></section>
 
-     <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
-  <span class="theme-icon sun">☀</span>
-  <span class="theme-icon moon">☾</span>
-  <span class="theme-knob"></span>
-</button>
+<section id="harlah" class="section"><div class="container"><div class="label">PILIHAN</div><h2>Berita Pilihan</h2><div class="cards">
+<article><div class="placeholder card-img">IMAGE</div><div class="cat">Ke-NU-an</div><h3>Berita dan informasi seputar Ke-NU-an</h3></article>
+<article><div class="placeholder card-img">IMAGE</div><div class="cat">Pramuka</div><h3>Aktivitas Pramuka Ma'arif Kabupaten Pasuruan</h3></article>
+<article><div class="placeholder card-img">IMAGE</div><div class="cat">Opini</div><h3>Gagasan dan pemikiran warga Ma'arif</h3></article>
+</div></div></section>
 
-    </div>
-  </header>
+<section id="tentang" class="section muted"><div class="container about"><div><div class="label">TENTANG KAMI</div><h2>LP Ma'arif NU Kabupaten Pasuruan</h2><p>Portal resmi informasi, berita, kegiatan, opini, dan program LP Ma'arif NU Kabupaten Pasuruan.</p></div><div class="links"><a href="#">Profil</a><a href="#">Visi & Misi</a><a href="#">Program</a><a href="#">Struktur Organisasi</a></div></div></section>
+</main>
 
-  <main>
-    <div class="container">
-      <h1>Ma'arif NU Kabupaten Pasuruan</h1>
-      <p>Portal berita dan informasi LP Ma'arif NU Kabupaten Pasuruan.</p>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<footer id="kontak"><div class="container footer"><div><img src="images/logo.png" alt="" class="flogo"><p>Rumah Inovasi Maarif. Kompleks Perkantoran PCNU Kab. Pasuruan.<br>Jl. Raya Warungdowo (Barat Lapangan) Pohjentrek Kab. Pasuruan</p></div><div><b>Kontak</b><p>maarifkabpasuruan@gmail.com<br>0343-422900</p></div><div><b>Media Sosial</b><p><a href="https://www.facebook.com/maarifpas/">Facebook</a><br><a href="https://www.instagram.com/maarifpas/">Instagram</a><br><a href="https://www.youtube.com/c/MaarifNUKabPasuruan">YouTube</a></p></div></div><div class="bottom">© 2026 LP Ma'arif NU Kabupaten Pasuruan</div></footer>
+<script src="script.js"></script>
+</body></html>
