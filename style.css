@@ -84,3 +84,13 @@ body {
 main {
   padding: 60px 0;
 }
+body.dark {
+  --bg: #101412;
+  --text: #f1f5f3;
+  --primary: #20c77a;
+  --border: #2b342f;
+}
+
+body.dark .main-nav a {
+  color: var(--text);
+}
