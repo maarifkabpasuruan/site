@@ -36,29 +36,17 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: var(--text);
-  line-height: 1;
 }
 
-.logo-small {
+.logo img {
   display: block;
-  font-size: 11px;
-}
-
-.logo-main {
-  display: block;
-  margin-top: 4px;
-  font-size: 25px;
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.logo-sub {
-  display: block;
-  margin-top: 4px;
-  font-size: 12px;
-  opacity: .7;
+  width: 220px;
+  height: auto;
+  max-height: 60px;
+  object-fit: contain;
 }
 
 .main-nav {
