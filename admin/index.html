@@ -7,47 +7,91 @@
 <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-<div id="login" class="screen">
+
+<section id="loginScreen" class="screen">
   <div class="box">
     <h1>Ma'arif NU</h1>
     <p>CMS Kabupaten Pasuruan</p>
     <form id="loginForm">
-      <input id="email" type="email" placeholder="Email admin" required>
-      <input id="password" type="password" placeholder="Password" required>
-      <button>Masuk</button>
+      <input id="email" type="email" placeholder="Email admin" autocomplete="username" required>
+      <input id="password" type="password" placeholder="Password" autocomplete="current-password" required>
+      <button id="loginButton" type="submit">Masuk</button>
       <div id="loginMsg"></div>
     </form>
   </div>
-</div>
+</section>
 
-<div id="app" hidden>
-  <header><b>Ma'arif NU CMS</b><button id="logout">Keluar</button></header>
+<section id="dashboardScreen" hidden>
+  <header>
+    <strong>Ma'arif NU CMS</strong>
+    <button id="logoutButton" class="ghost">Keluar</button>
+  </header>
+
   <main>
-    <section class="toolbar">
-      <div><h1>Berita</h1><p>Kelola berita langsung dari CMS.</p></div>
-      <button id="newBtn">+ Tulis Berita</button>
-    </section>
-    <section id="list"></section>
+    <div class="toolbar">
+      <div>
+        <h1>Berita</h1>
+        <p>Kelola berita website Ma'arif NU Kabupaten Pasuruan.</p>
+      </div>
+      <button id="newPostButton">+ Tulis Berita</button>
+    </div>
+
+    <div id="postList" class="post-list"></div>
 
     <section id="editor" class="panel" hidden>
-      <div class="toolbar"><div><h2 id="editorTitle">Tulis Berita</h2></div><button id="closeBtn" class="secondary">Tutup</button></div>
+      <div class="toolbar">
+        <h2 id="editorHeading">Tulis Berita</h2>
+        <button id="closeEditorButton" class="secondary">Tutup</button>
+      </div>
+
       <form id="postForm">
-        <input type="hidden" id="postId">
-        <label>Judul<input id="title" required></label>
-        <label>Slug<input id="slug" required></label>
-        <label>Kategori<select id="category"></select></label>
-        <label>URL gambar<input id="image" placeholder="https://..."></label>
-        <label>Ringkasan<textarea id="excerpt" rows="3"></textarea></label>
-        <label>Isi berita<textarea id="content" rows="14" required></textarea></label>
-        <div class="row">
-          <label class="check"><input id="headline" type="checkbox"> Jadikan Headline</label>
-          <label>Status<select id="status"><option value="draft">Draft</option><option value="published">Publish</option></select></label>
+        <input id="postId" type="hidden">
+
+        <label>Judul
+          <input id="title" required>
+        </label>
+
+        <label>Slug
+          <input id="slug" required>
+        </label>
+
+        <label>Kategori
+          <select id="category"></select>
+        </label>
+
+        <label>URL gambar
+          <input id="image" placeholder="https://...">
+        </label>
+
+        <label>Ringkasan
+          <textarea id="excerpt" rows="3"></textarea>
+        </label>
+
+        <label>Isi berita
+          <textarea id="content" rows="14" required></textarea>
+        </label>
+
+        <div class="form-row">
+          <label class="check">
+            <input id="headline" type="checkbox">
+            Jadikan Headline
+          </label>
+
+          <label>Status
+            <select id="status">
+              <option value="draft">Draft</option>
+              <option value="published">Publish</option>
+            </select>
+          </label>
         </div>
-        <button type="submit">Simpan</button><span id="saveMsg"></span>
+
+        <button type="submit">Simpan Berita</button>
+        <span id="saveMsg"></span>
       </form>
     </section>
   </main>
-</div>
-<script src="admin.js"></script>
+</section>
+
+<script src="admin.js?v=3"></script>
 </body>
 </html>

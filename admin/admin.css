@@ -1,1 +1,25 @@
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f7f6;color:#17201c}button{border:0;border-radius:9px;padding:11px 16px;background:#079b58;color:#fff;font-weight:700;cursor:pointer}button.secondary{background:#e6ece8;color:#17201c}.screen{min-height:100vh;display:grid;place-items:center}.box,.panel{background:#fff;border:1px solid #dfe7e2;border-radius:16px;box-shadow:0 10px 30px #0000000b}.box{width:min(390px,calc(100% - 30px));padding:30px}.box h1{margin:0 0 4px}.box p{color:#6b756f;margin-top:0}.box input{width:100%;padding:13px;margin:7px 0;border:1px solid #d7dfda;border-radius:8px}.box button{width:100%;margin-top:8px}#loginMsg,#saveMsg{color:#c0392b;font-size:13px;margin-left:10px}header{height:64px;background:#fff;border-bottom:1px solid #e0e7e2;display:flex;align-items:center;justify-content:space-between;padding:0 max(18px,calc((100% - 1100px)/2))}header button{background:transparent;color:#536059}main{width:min(1100px,calc(100% - 30px));margin:30px auto}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px}.toolbar h1,.toolbar h2{margin:0}.toolbar p{color:#6b756f}.post{background:#fff;border:1px solid #dfe7e2;border-radius:12px;padding:16px;margin:12px 0;display:flex;justify-content:space-between;gap:20px}.post h3{margin:0 0 7px}.meta{color:#6b756f;font-size:13px}.actions{display:flex;gap:7px;align-items:center}.actions button{font-size:12px;padding:8px 11px}.panel{margin-top:25px;padding:25px}.panel label{display:block;font-weight:700;font-size:13px;margin:14px 0}.panel input,.panel select,.panel textarea{display:block;width:100%;margin-top:6px;padding:12px;border:1px solid #d7dfda;border-radius:8px;font:inherit}.row{display:grid;grid-template-columns:1fr 1fr;gap:20px}.check{display:flex!important;align-items:center;gap:8px}.check input{width:auto!important;margin:0}.check{font-weight:400!important}@media(max-width:650px){.post{display:block}.actions{margin-top:12px}.row{grid-template-columns:1fr}.toolbar{align-items:flex-start}}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7f6;color:#17201c}
+button{border:0;border-radius:9px;padding:11px 16px;background:#079b58;color:white;font-weight:700;cursor:pointer}
+button.secondary{background:#e5ebe7;color:#17201c}
+button.ghost{background:transparent;color:#52605a}
+.screen{min-height:100vh;display:grid;place-items:center}
+.box,.panel{background:#fff;border:1px solid #dfe7e2;border-radius:16px;box-shadow:0 10px 30px #0000000b}
+.box{width:min(390px,calc(100% - 30px));padding:30px}
+.box h1{margin:0 0 5px}.box p{color:#6b756f;margin-top:0}
+.box input{width:100%;padding:13px;margin:7px 0;border:1px solid #d7dfda;border-radius:8px}
+.box button{width:100%;margin-top:8px}
+#loginMsg,#saveMsg{display:block;margin-top:10px;font-size:13px;color:#c0392b}
+header{height:64px;background:#fff;border-bottom:1px solid #e0e7e2;display:flex;align-items:center;justify-content:space-between;padding:0 max(18px,calc((100% - 1100px)/2))}
+main{width:min(1100px,calc(100% - 30px));margin:30px auto}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.toolbar h1,.toolbar h2{margin:0}.toolbar p{color:#6b756f}
+.post-list{margin-top:20px}
+.post{background:#fff;border:1px solid #dfe7e2;border-radius:12px;padding:16px;margin:12px 0;display:flex;justify-content:space-between;gap:20px}
+.post h3{margin:0 0 7px}.meta{color:#6b756f;font-size:13px}
+.actions{display:flex;gap:7px}.actions button{font-size:12px;padding:8px 11px}
+.panel{margin-top:25px;padding:25px}.panel label{display:block;font-weight:700;font-size:13px;margin:14px 0}
+.panel input,.panel select,.panel textarea{display:block;width:100%;margin-top:6px;padding:12px;border:1px solid #d7dfda;border-radius:8px;font:inherit}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.check{display:flex!important;align-items:center;gap:8px;font-weight:400!important}.check input{width:auto!important;margin:0}
+@media(max-width:650px){.post{display:block}.actions{margin-top:12px}.form-row{grid-template-columns:1fr}.toolbar{align-items:flex-start}}
